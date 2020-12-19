@@ -15,7 +15,7 @@ Tutaj proszę umieścić karty przedmiotów (około 10-15 kart). Na kartę przed
 - nazwa przedmiotu
 - cena
 - przycisk dodania produktu do koszyka zakupowego
-W jednej linii powinno znaleźć się około 2-5 produktów w zależności od rozdzielczości strony. Wykorzystaj flexbox oraz właściwość flex-wrap: wrap;
+W jednej linii powinno znaleźć się około 2-5 produktów w zależności od rozdzielczości strony. Wykorzystaj flexbox oraz właściwość \
 
 SEKCJA KOSZYKA ZAKUPOWEGO:
 Elementy:
