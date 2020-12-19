@@ -11,14 +11,72 @@ body {
     font-size: 1.5em;
 }
 
-.basket {
+p {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.basket {
+    display: inline-block;
     width: 250px;
     height: 100vh;
     background-color: rgba(255,209,128);
     float: right;
     position: sticky;
     top: 0;
+}
+
+/*.box1 {
+    height:100px;
+    width: 240px;
+    item-align: center;
+    margin: 5px;
+    justify-content: center;
+}*/
+
+.buy {
+    width: 110px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.clear {
+    width: 110px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.basketPrice {
+    width: 100px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/*.box2 {
+    height:100px;
+    width: 240px;
+    item-align: center;
+    margin: 5px;
+    justify-content: center;
+}*/
+
+.nameB {
+    width: 110px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#delete {
+    width: 110px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.priceB {
+    width: 110px;
+    background-color: lightgray;
+    text-align: center;
 }
 
 .box3{
@@ -51,12 +109,6 @@ body {
     margin: 5px;
 }
 
-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .add {
     width: 130px;
     background-color: gray;
@@ -67,30 +119,4 @@ p {
     width: 130px;
     background-color: gray;
     text-align: center;
-}
-
-.buy {
-    width: 110px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-.clear {
-    width: 110px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-.basketPrice {
-    width: 100px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-.box1 {
-    height:100px;
-    width: 272px;
-    item-align: center;
-    margin: 5px;
-    justify-content: center;
 }
