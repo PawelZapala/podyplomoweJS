@@ -6,6 +6,9 @@
      var box2 = $('#box2');
      var buttonBuy = $('#buy');
      var basket = $('.basket');
+     var name = $('.name');
+     var price = $('.price');
+
 
      box2 = 0;
 
@@ -20,7 +23,7 @@
 +    buttonAdd.on('click', function () {
 /*+        // tutaj logika dodająca produkty do koszyka, aktualizująca cenę koszyka*/
          /*document.getElementById('box2').textContent = ++box2;*/
-         productCounter++;
+         productCounter = document.getElementByClass('name');
 /*
 +        // tutaj tworzenie nowego elementu do koszyka (cena, nazwa i przycisk usuń)
 */
