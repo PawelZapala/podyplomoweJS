@@ -41,7 +41,7 @@ p {
     text-align: center;
 }
 
-#remove {
+#removeAll {
     width: 110px;
     background-color: lightgray;
     text-align: center;
@@ -68,7 +68,7 @@ p {
     text-align: center;
 }
 
-#delete {
+#remove {
     width: 110px;
     background-color: lightgray;
     text-align: center;

@@ -8,12 +8,14 @@
      var basket = $('.basket');
      var name = $('.name');
      var price = $('.price');
+     var basketPrice = $('.basketPrice')
+     /*var delete = $('#delete');*/
 
-     var productCounter = 0;
+    basketPrice = 0;
 
 +    buttonAdd.on('click', function () {
-         productCounter = name + delete + price;
-         var newElement = $('<div id="box2">' + productCounter + '</div>');
+         basketPrice = price++;
+         var newElement = $('<div id="box2">' + $(this).next().text() + $(this).parents('.box3').children('.name').text() + '</div>');
          basket.append(newElement);
      });
 
@@ -21,7 +23,9 @@
          $(this).remove();
      });
 
-+    buttonDelete.on('click', '#box1', function () {
-         $(this).remove();
-     });
  });
+
+  function remove(id) {
+  	console.log(id);
+  	$("#"+id).remove();
+  };
