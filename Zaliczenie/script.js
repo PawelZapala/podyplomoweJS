@@ -1,6 +1,5 @@
  $(function () {
 
-     var nameB = $('.name');
      var buttonAdd = $('.add');
      var buttonDelete = $('#delete');
      var buttonRemove = $('#remove');
@@ -16,30 +15,35 @@
      });*/
 
 
-     var basketCounter = 0;
+     var productCounter = 0;
 
 +    buttonAdd.on('click', function () {
-+        // tutaj logika dodająca produkty do koszyka, aktualizująca cenę koszyka
-         document.getElementById('box2').textContent = ++box2;
-         basketCounter++;
+/*+        // tutaj logika dodająca produkty do koszyka, aktualizująca cenę koszyka*/
+         /*document.getElementById('box2').textContent = ++box2;*/
+         productCounter++;
+/*
 +        // tutaj tworzenie nowego elementu do koszyka (cena, nazwa i przycisk usuń)
-         var newElement = $('<div id="box2">' + basketCounter + '</div>');
+*/
+         var newElement = $('<div id="box2">' + productCounter + '</div>');
          basket.append(newElement);
      });
 
-+    buttonRemove.on('click', '#box2, function () {
++    buttonRemove.on('click', '#box2', function () {
+/*
 +        // tutaj usuwanie wszystkich dzieci elementu blokowego o id box2
+*/
          $(this).remove();
      });
 
 +    buttonDelete.on('click', '#box1', function () {
+/*
 +        // tutaj usuwamy element produkt który wywołał akcję czyli usuwamy produkt można wykorzystać $(this) i parent
+*/
          $(this).remove();
      });
 
-+    buttonBuy.on('click', function () {
-+
+/*+    buttonBuy.on('click', function () {
 +        window.alert('Dokonujesz zakupu o wartości: ' + price);
-+    });
++    });*/
 
  });
