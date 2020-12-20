@@ -38,10 +38,8 @@
      });
 
 +    buttonBuy.on('click', function () {
-+        // tutaj wyświetlenie wartości koszyka czyli zmienna przechowująca cenę koszyka, nie potrzeba wyświetlać jakie
-+        // przedmioty zostały zakupione
-+        // nie windows tylko window
-+        window.alert('Dokonujesz zakupu' + name + '. Cena: ' + price);
++
++        window.alert('Dokonujesz zakupu o wartości: ' + price);
 +    });
 
  });
