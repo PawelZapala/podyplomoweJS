@@ -1,16 +1,20 @@
 $(function () {
 
-    var box2 = 0;
+    var nameB = 0;
 
-    var button = $('#add');
+    var button = $('.add');
     var box2 = $('#box2')
 
-    $(document).on('click', function () {
+    $('.add').on('click', function () {
         document.getElementById('box2').textContent = ++box2;
     });
 
-    button.on('click', function() {
+    var box1 = 0;
 
+    button.on('click', function() {
+        box1++;
+        var newElement = $('#box2');
+        basket.append(newElement);
     });
 
 });

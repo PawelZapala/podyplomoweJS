@@ -27,41 +27,41 @@ p {
     top: 0;
 }
 
-/*.box1 {
+.box1 {
     height:100px;
     width: 240px;
     item-align: center;
     margin: 5px;
     justify-content: center;
-}*/
+}
 
-.buy {
+#buy {
     width: 110px;
     background-color: lightgray;
     text-align: center;
 }
 
-.clear {
+#clear {
     width: 110px;
     background-color: lightgray;
     text-align: center;
 }
 
-.basketPrice {
+#basketPrice {
     width: 100px;
     background-color: lightgray;
     text-align: center;
 }
 
-/*.box2 {
+.box2 {
     height:100px;
     width: 240px;
     item-align: center;
     margin: 5px;
     justify-content: center;
-}*/
+}
 
-.nameB {
+#nameB {
     width: 110px;
     background-color: lightgray;
     text-align: center;
@@ -73,7 +73,7 @@ p {
     text-align: center;
 }
 
-.priceB {
+#priceB {
     width: 110px;
     background-color: lightgray;
     text-align: center;
