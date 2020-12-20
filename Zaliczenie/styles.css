@@ -53,12 +53,13 @@ p {
     text-align: center;
 }
 
-.box2 {
+#box2 {
     height:100px;
     width: 240px;
     item-align: center;
     margin: 5px;
     justify-content: center;
+    background-color: gray;
 }
 
 #nameB {
