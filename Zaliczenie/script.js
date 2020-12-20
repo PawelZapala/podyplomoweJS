@@ -23,7 +23,7 @@
 +    buttonAdd.on('click', function () {
 /*+        // tutaj logika dodająca produkty do koszyka, aktualizująca cenę koszyka*/
          /*document.getElementById('box2').textContent = ++box2;*/
-         productCounter = document.getElementByClass('name');
+         productCounter = name + delete + price;
 /*
 +        // tutaj tworzenie nowego elementu do koszyka (cena, nazwa i przycisk usuń)
 */
