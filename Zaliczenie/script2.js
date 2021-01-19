@@ -6,15 +6,15 @@
      var buttonBuy = $('#buy');
      var basket = $('.basket');
      var name = $('.name');
-     var price = parseInt($('.price').attr('id'),10);
+     var price = $('.price');
      var basketPrice = $('.basketPrice');
      var buttonDelete = $('.delete');
-
-    basketPrice = 0;
 
     buttonAdd.on('click', function () {
          var newElement = $('<div class="box2">' + $(this).parents('.box3').children('.name').text() + " " + '<button class="delete">Usuń</button>' + '<p>' + $(this).next().text() + '</div>');
          basket.append(newElement);
+         basketPrice = 0;
+         basketPrice = basketPrice + parseInt('.price');
      });
 
     $('body').on('click', '.delete', function () {
