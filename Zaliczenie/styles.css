@@ -53,8 +53,8 @@ p {
     text-align: center;
 }
 
-#box2 {
-    height:100px;
+.box2 {
+    height:70px;
     width: 240px;
     item-align: center;
     margin: 5px;
@@ -68,7 +68,7 @@ p {
     text-align: center;
 }
 
-#remove {
+.delete {
     width: 110px;
     background-color: lightgray;
     text-align: center;
