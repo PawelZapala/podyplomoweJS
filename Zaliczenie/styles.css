@@ -1,9 +1,11 @@
 body {
     margin: 0;
 }
-.menu {
+
+#menu {
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     height: 50px;
     background-color: lightblue;
@@ -11,113 +13,150 @@ body {
     font-size: 1.5em;
 }
 
-p {
+#shoe-shop {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
-.basket {
-    display: inline-block;
-    width: 250px;
-    height: 100vh;
-    background-color: rgba(255,209,128);
-    float: right;
-    position: sticky;
-    top: 0;
-}
-
-.box1 {
-    height:100px;
-    width: 240px;
-    item-align: center;
-    margin: 5px;
-    justify-content: center;
-}
-
-#buy {
-    width: 110px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-#removeAll {
-    width: 110px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-#basketPrice {
-    width: 100px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-.box2 {
-    height:70px;
-    width: 240px;
-    item-align: center;
-    margin: 5px;
-    justify-content: center;
-    background-color: gray;
-}
-
-#nameB {
-    width: 110px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-.delete {
-    width: 110px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-#priceB {
-    width: 110px;
-    background-color: lightgray;
-    text-align: center;
-}
-
-.box3{
-   height:330px;
-   width: 272px;
-   background-color: lightgray;
-   item-align: center;
-   margin: 5px;
-   justify-content: center;
-}
-
-.items {
+#product-list {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 100px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
-.items img {
+.item {
+    width: 340px;
+    height: 330px;
+    margin: 20px;
+    text-align: center;
+}
+
+.item-photo {
+    width: 300px;
+    height: 270px;
+    background-color: lightgray;
+    margin: auto;
+}
+
+img {
+    width: auto;
     height: 250px;
-    margin: 5px;
+
 }
 
-.name {
+.item-name {
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.add-price {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: gray;
+}
+
+.item-price {
+    width: 135px;
+    height: 10px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+}
+
+#product-list button {
+    width: 148px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 16px;
     margin: 5px;
 }
 
-.add {
-    width: 130px;
-    background-color: gray;
+#shopping-cart {
+    width: 20%;
+    height: auto;
+    background-color: rgb(255,209,128);
+}
+
+#buy-clear-price {
+    width: 100%;
+    height: 90px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+#buy-clear {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+
+#buy-clear-price button {
+    width: 140px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cart-price {
+    width: calc(100% - 20px);
+    height: auto;
+    margin: 10px;
+    font-size: 20px;
     text-align: center;
 }
 
-.price {
-    width: 130px;
-    background-color: gray;
+#basket-items {
+    width: calc(100% - 4px);
+    margin: 2px;
+    background-color: beige;
+}
+
+.basket-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.basket-item-name_rem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: beige;
+}
+
+.basket-item-name {
+    width: calc(100% - 10px);
+    height: 30px;
+    margin: 5px;
     text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: bisque;
+}
+
+#basket-items button {
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 18px;
+}
+
+.basket-item-price {
+    width: calc(100% - 10px);
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: bisque;
 }

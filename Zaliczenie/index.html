@@ -4,140 +4,126 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="jquery-3.5.1.min.js"></script>
-    <script src ="script2.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-
-<div class="container">
-    <div class="menu">
-        <span><a href="">Sklep</a></span>
-        <span><a href="">Dostawa</a></span>
-        <span><a href="">Rejestracja</a></span>
-    </div>
-
-    <div class="basket">
-        <div class="box1">
-            <p>
-                <button id ="buy">Kup</button>
-                <button id ="removeAll">Wyczyść</button>
-            </p>
-            <p>
-                <span id ="basketPrice"></span>
-            </p>
-        </div>
-    </div>
-
-    <div class="items">
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Timberland</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">499 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Nike</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">399 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Adidas</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">249 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Puma</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">319 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Reebok</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">299 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Timberland</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">519 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Nike</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">799 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Adidas</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">249 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Reebok</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">269 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Lacoste</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">699 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Nike</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">399 zł</span>
-            </p>
-        </div>
-
-        <div class="box3">
-            <img src="zadanie.jpg" alt="shoes"/>
-            <span class="name">buty Reebok</span>
-            <p>
-                <button class="add">Dodaj</button>
-                <span class="price">209 zł</span>
-            </p>
-        </div>
-    </div>
+<div id="menu">
+    <a href="">Sklep</a>
+    <a href="">Dostawa</a>
+    <a href="">Rejestracja</a>
 </div>
 
+<div id="shoe-shop">
+    <div id="product-list">
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Timberland</div>
+            <div class="add-price">
+                <div class="item-price">499 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Nike</div>
+            <div class="add-price">
+                <div class="item-price">399 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Adidas</div>
+            <div class="add-price">
+                <div class="item-price">249 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Puma</div>
+            <div class="add-price">
+                <div class="item-price">319 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Reebok</div>
+            <div class="add-price">
+                <div class="item-price">299 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Timberland 2.0 </div>
+            <div class="add-price">
+                <div class="item-price">519 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Nike 2.0</div>
+            <div class="add-price">
+                <div class="item-price">799 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Adidas 2.0</div>
+            <div class="add-price">
+                <div class="item-price">249 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Reebok 2.0</div>
+            <div class="add-price">
+                <div class="item-price">269 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Lacoste</div>
+            <div class="add-price">
+                <div class="item-price">699 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Nike 3.0</div>
+            <div class="add-price">
+                <div class="item-price">399 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-photo"><img src="zadanie.jpg" alt="shoes"/></div>
+            <div class="item-name">Buty Timberland 3.0</div>
+            <div class="add-price">
+                <div class="item-price">769 zł</div>
+                <button class="btn-add">Dodaj do koszyka</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="shopping-cart">
+        <div id="buy-clear-price">
+            <div id="buy-clear">
+                <button id="btn-buy">Kup</button>
+                <button id="btn-clear">Wyczyść</button>
+            </div>
+            <div id="cart-price">Cena koszyka: 0 zł</div>
+        </div>
+        <div id="basket-items"></div>
+    </div>
+
+</div>
 </body>
 </html>
